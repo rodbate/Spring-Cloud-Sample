@@ -21,15 +21,16 @@ repositories {
     mavenCentral()
 }
 
+
 dependencyManagement {
     imports {
         mavenBom 'org.springframework.cloud:spring-cloud-dependencies:Brixton.SR4'
     }
 }
 
+
 dependencies {
-    compile 'org.springframework.cloud:spring-cloud-starter-config-server'
-    //compile group: 'org.springframework.cloud', name: 'spring-cloud-config-server', version: '1.1.2.RELEASE'
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-actuator")
+    compile 'org.springframework.cloud:spring-cloud-starter-eureka-server'
 }

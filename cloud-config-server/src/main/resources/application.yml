@@ -2,10 +2,11 @@ server:
   port: 8089
 
 spring:
+  application:
+    name: cloud-config-server
   cloud:
     config:
       server:
         git:
-          uri: https://git.oschina.net/zhou666/spring-cloud-7simple.git
-
-spring.cloud.config.server.git.searchPaths=cloud-config-repo
+          uri: https://github.com/rodbate/Spring-Cloud-Sample.git
+          searchPaths: cloud-config-repo

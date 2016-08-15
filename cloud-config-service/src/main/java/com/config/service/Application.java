@@ -1,18 +1,14 @@
-package com.cloud.server;
+package com.config.service;
 
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.config.server.EnableConfigServer;
 
 @SpringBootApplication
-@EnableConfigServer
 public class Application {
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
+
 }
-
-
-//http://www.cnblogs.com/skyblog/p/5133752.html

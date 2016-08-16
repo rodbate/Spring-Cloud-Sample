@@ -1,0 +1,23 @@
+server:
+  port: 8099
+
+
+spring:
+  application:
+    name: cloud-simple-ui
+  cloud:
+        config:
+          uri: http://127.0.0.1:${config.port:8089}
+          name: cloud-config
+          profile: ${config.profile:dev}
+
+  boot:
+    admin:
+      url: http://127.0.0.1:9091
+
+
+
+eureka:
+  client:
+    serviceUrl:
+          defaultZone: http://localhost:8092/eureka/

@@ -1,0 +1,10 @@
+server:
+  port: 9091
+
+spring:
+  application:
+    name: cloud-admin-server
+
+#  boot:
+#    admin:
+#      url: http://127.0.0.1:${server.port}

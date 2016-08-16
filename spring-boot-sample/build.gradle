@@ -1,4 +1,4 @@
-group 'Spring-Cloud-Sample'
+group 'spring-boot-sample'
 version '1.0-SNAPSHOT'
 
 buildscript {

@@ -1,4 +1,4 @@
-group 'Spring-Cloud-Sample'
+group 'cloud-eureka-server'
 version '1.0-SNAPSHOT'
 
 buildscript {

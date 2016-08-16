@@ -1,4 +1,4 @@
-group 'cloud-config-server'
+group 'cloud-admin-server'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -14,9 +14,6 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'spring-boot'
 
-
-sourceCompatibility = 1.8
-
 repositories {
     mavenCentral()
 }
@@ -28,8 +25,7 @@ dependencyManagement {
 }
 
 dependencies {
-    compile 'org.springframework.cloud:spring-cloud-starter-config-server'
-    //compile group: 'org.springframework.cloud', name: 'spring-cloud-config-server', version: '1.1.2.RELEASE'
-    compile("org.springframework.boot:spring-boot-starter-web")
-    compile("org.springframework.boot:spring-boot-starter-actuator")
+    compile 'de.codecentric:spring-boot-admin-server:1.4.1'
+    compile 'de.codecentric:spring-boot-admin-server-ui:1.4.1'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
 }

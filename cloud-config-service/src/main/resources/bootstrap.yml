@@ -3,4 +3,4 @@ spring:
       config:
         uri: http://127.0.0.1:${config.port:8089}
         name: cloud-config
-        profile: ${config.profile:test}
+        profile: ${config.profile:dev}

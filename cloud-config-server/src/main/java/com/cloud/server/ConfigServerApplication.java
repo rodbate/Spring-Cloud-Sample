@@ -13,6 +13,3 @@ public class ConfigServerApplication {
         SpringApplication.run(ConfigServerApplication.class, args);
     }
 }
-
-
-//http://www.cnblogs.com/skyblog/p/5133752.html
